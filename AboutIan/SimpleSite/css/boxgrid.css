@@ -1,0 +1,59 @@
+.boxgrid
+{
+	width: 350px;
+	height: 160px;
+	margin:10px;
+	float:left;
+	background:#161613;
+	border: solid 2px #8399AF;
+	overflow: hidden;
+	position: relative;
+}
+
+.boxgrid img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.boxgrid h3
+{ 
+	margin: 10px 10px 0 10px; 
+	color:#FFF; 
+	font:18pt Arial, sans-serif; 
+	letter-spacing:-1px; 
+	font-weight: bold;  
+}
+
+.boxcaption
+{
+	float: left;
+	position: absolute;
+	background: #2f2f2f;
+	height: 100px;
+	width: 100%;
+	opacity: .8;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 	}
+ 	
+.boxgrid p{
+ 	padding: 18px 0px 5px 10px;
+ 	color: #c4c4c4;
+}
+
+.captionfull .boxcaption 
+{
+ 	top: 160px;
+ 	left: 0px;
+}
+
+.caption .boxcaption 
+{
+ 	top: 100px;
+ 	left: 0px;
+}
+ 

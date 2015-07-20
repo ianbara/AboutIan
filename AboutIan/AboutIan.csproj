@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B150F51-CC03-4FA5-ADBA-7AC86D2A0B38}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AboutIan</RootNamespace>
+    <AssemblyName>AboutIan</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Global.asax" />
+    <Content Include="SimpleSite\bootstrap\img\billie_holiday.png" />
+    <Content Include="SimpleSite\bootstrap\img\billie_holiday\billie_holiday_%402X.png" />
+    <Content Include="SimpleSite\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="SimpleSite\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="SimpleSite\bootstrap\img\subtlenet2\subtlenet2.png" />
+    <Content Include="SimpleSite\bootstrap\img\subtlenet2\subtlenet2_%402X.png" />
+    <Content Include="SimpleSite\Carosel.html" />
+    <Content Include="SimpleSite\css\bootstrap-responsive.css" />
+    <Content Include="SimpleSite\css\bootstrap-responsive.min.css" />
+    <Content Include="SimpleSite\css\bootstrap.css" />
+    <Content Include="SimpleSite\css\bootstrap.min.css" />
+    <Content Include="SimpleSite\css\boxgrid.css" />
+    <Content Include="SimpleSite\css\jquery.fancybox.css" />
+    <Content Include="SimpleSite\css\jquery.jscrollpane.css" />
+    <Content Include="SimpleSite\css\styles.css" />
+    <Content Include="SimpleSite\fancybox\source\blank.gif" />
+    <Content Include="SimpleSite\fancybox\source\fancybox_loading.gif" />
+    <Content Include="SimpleSite\fancybox\source\fancybox_overlay.png" />
+    <Content Include="SimpleSite\fancybox\source\fancybox_sprite.png" />
+    <Content Include="SimpleSite\fancybox\source\helpers\fancybox_buttons.png" />
+    <Content Include="SimpleSite\fancybox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="SimpleSite\fancybox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="SimpleSite\fancybox\source\helpers\jquery.fancybox-media.js" />
+    <Content Include="SimpleSite\fancybox\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="SimpleSite\fancybox\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="SimpleSite\fancybox\source\jquery.fancybox.css" />
+    <Content Include="SimpleSite\fancybox\source\jquery.fancybox.js" />
+    <Content Include="SimpleSite\fancybox\source\jquery.fancybox.pack.js" />
+    <Content Include="SimpleSite\grid.txt" />
+    <Content Include="SimpleSite\ideas..txt" />
+    <Content Include="SimpleSite\images\arrows.png" />
+    <Content Include="SimpleSite\images\cross.png" />
+    <Content Include="SimpleSite\images\ianb.png" />
+    <Content Include="SimpleSite\images\ianb_pick.png" />
+    <Content Include="SimpleSite\images\logo.png" />
+    <Content Include="SimpleSite\images\navy_blue.png" />
+    <Content Include="SimpleSite\images\navy_blue_%402X.png" />
+    <Content Include="SimpleSite\images\pattern.png" />
+    <Content Include="SimpleSite\images\screenshots\6fm.jpg" />
+    <Content Include="SimpleSite\images\screenshots\campaign monitor.png" />
+    <Content Include="SimpleSite\images\screenshots\contact.jpg" />
+    <Content Include="SimpleSite\images\screenshots\crm.png" />
+    <Content Include="SimpleSite\images\screenshots\crm_thumb.png" />
+    <Content Include="SimpleSite\images\screenshots\crm_thumb2.png" />
+    <Content Include="SimpleSite\images\screenshots\events.png" />
+    <Content Include="SimpleSite\images\screenshots\events_thumb.png" />
+    <Content Include="SimpleSite\images\screenshots\glo_soa.png" />
+    <Content Include="SimpleSite\images\screenshots\kimera.jpg" />
+    <Content Include="SimpleSite\images\screenshots\large\contact.png" />
+    <Content Include="SimpleSite\images\screenshots\large\crm.png" />
+    <Content Include="SimpleSite\images\screenshots\large\events.png" />
+    <Content Include="SimpleSite\images\screenshots\large\otis.png" />
+    <Content Include="SimpleSite\images\screenshots\large\proform.png" />
+    <Content Include="SimpleSite\images\screenshots\large\search.png" />
+    <Content Include="SimpleSite\images\screenshots\large\searching.png" />
+    <Content Include="SimpleSite\images\screenshots\mobile_thumb.png" />
+    <Content Include="SimpleSite\images\screenshots\otis.png" />
+    <Content Include="SimpleSite\images\screenshots\otis_thumb.png" />
+    <Content Include="SimpleSite\images\screenshots\proform.png" />
+    <Content Include="SimpleSite\images\screenshots\proform_thumb.png" />
+    <Content Include="SimpleSite\images\screenshots\satsuma_thumb.png" />
+    <Content Include="SimpleSite\images\screenshots\small\contact.png" />
+    <Content Include="SimpleSite\images\screenshots\small\crm.png" />
+    <Content Include="SimpleSite\images\screenshots\small\events.png" />
+    <Content Include="SimpleSite\images\screenshots\small\extranet.png" />
+    <Content Include="SimpleSite\images\screenshots\small\extranet_password.png" />
+    <Content Include="SimpleSite\images\screenshots\small\extranet_password_+small.png" />
+    <Content Include="SimpleSite\images\screenshots\small\extranet_small.png" />
+    <Content Include="SimpleSite\images\screenshots\small\otis.png" />
+    <Content Include="SimpleSite\images\screenshots\small\search.png" />
+    <Content Include="SimpleSite\images\screenshots\small\searching.png" />
+    <Content Include="SimpleSite\images\screenshots\springcliffe.jpg" />
+    <Content Include="SimpleSite\images\screenshots\springcliffecoaching.png" />
+    <Content Include="SimpleSite\images\screenshots\Tenet_MobileApp.png" />
+    <Content Include="SimpleSite\images\screenshots\Tenet_MobileApp_screen2y.png" />
+    <Content Include="SimpleSite\images\screenshots\unipol_mobile.png" />
+    <Content Include="SimpleSite\images\screenshots\unipol_thumb.png" />
+    <Content Include="SimpleSite\img\billie_holiday.png" />
+    <Content Include="SimpleSite\img\billie_holiday\billie_holiday_%402X.png" />
+    <Content Include="SimpleSite\img\glyphicons-halflings-white.png" />
+    <Content Include="SimpleSite\img\glyphicons-halflings.png" />
+    <Content Include="SimpleSite\img\subtlenet2\subtlenet2.png" />
+    <Content Include="SimpleSite\img\subtlenet2\subtlenet2_%402X.png" />
+    <Content Include="SimpleSite\index.html" />
+    <Content Include="SimpleSite\js\bootstrap.js" />
+    <Content Include="SimpleSite\js\bootstrap.min.js" />
+    <Content Include="SimpleSite\js\gridbox.js" />
+    <Content Include="SimpleSite\js\jquery-1.8.2.min.js" />
+    <Content Include="SimpleSite\js\jquery.carouFredSel-6.1.0.js" />
+    <Content Include="SimpleSite\js\jquery.contentcarousel.js" />
+    <Content Include="SimpleSite\js\jquery.easing.1.3.js" />
+    <Content Include="SimpleSite\js\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="SimpleSite\spin.html" />
+    <Content Include="SimpleSite\Tenet_MobileApp_actviy.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="SimpleSite\images\navy_blue\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SimpleSite\images\Android_tenet.docx" />
+    <Content Include="SimpleSite\images\deisgn.psd" />
+    <Content Include="SimpleSite\Tenet_MobileApp.psd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49901</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49901/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
